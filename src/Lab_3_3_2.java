@@ -1,37 +1,44 @@
 public class Lab_3_3_2 {
     public static void main(String[] args) {
         String liczba = args[0];
+        char litera1 = liczba.charAt(0);
         long liczbaLong = 0;
-        switch (liczba){
-            case "jeden":
+        switch (litera1){
+            case 'j':
                 liczbaLong = 1;
                 break;
-            case "dwa":
-                liczbaLong = 2;
-                break;
-            case "trzy":
+            case 'd':
+                if(liczba.charAt(1)=='w'){
+                    liczbaLong = 2;
+                    break;
+                }
+                if(liczba.charAt(4)=='w'){
+                    liczbaLong = 9;
+                    break;
+                }
+                if(liczba.charAt(4)=='s'){
+                    liczbaLong = 10;
+                    break;
+                }     
+            case 't':
                 liczbaLong = 3;
                 break;
-            case "cztery":
+            case 'c':
                 liczbaLong = 4;
                 break;
-            case "piec":
+            case 'p':
                 liczbaLong = 5;
                 break;
-            case "szesc":
-                liczbaLong = 6;
-                break;
-            case "siedem":
-                liczbaLong = 7;
-                break;
-            case "osiem":
+            case 's':
+                if(liczba.charAt(1)=='z'){    
+                    liczbaLong = 6;
+                    break;
+                }else{
+                    liczbaLong = 7;
+                    break;
+                }    
+            case 'o':
                 liczbaLong = 8;
-                break;
-            case "dziewiec":
-                liczbaLong = 9;
-                break;
-            case "dziesiec":
-                liczbaLong = 10;
                 break;
         }
         System.out.println(liczba + " to " + liczbaLong);
