@@ -1,0 +1,46 @@
+/* Napisz program, który:
+
+    1) stworzy tablicę liczb typu int o rozmiarze, który będziemy podawać jako argument przy starcie programu,
+    2) wypełni tablicę kolejno liczbami od 1 do n, gdzie n to rozmiar tablicy,
+    3) wyświetli zawartość tablicy,
+    4) dokona konwersji tablicy tak, aby elementy ułożyły się odwrotnie (ciąg malejący: n, n-1, n-2… 1),
+    3) wyświetli zawartyość przekonwertowanej tablicy,
+    fragmenty programu odpowiadjące za konkretne zadania zostaną wyodrębnione jako oddzielne metody. */
+    
+    public static void main(String[] args){
+      int[] tab = makeArray();
+      fillArray(tab);
+      showArray(tab);
+      reverseArray(tab);
+      showArray(tab);
+    }
+    
+    public static int[] makeArray(int size){
+       int[] tab = new int[size];
+       return tab;
+    }
+ 
+    public static void fillArray(int[] tab){
+      for(int i=0;i<tab.length;i++){
+        tab[i]=i+1;
+      }
+    }
+ 
+    public static void showArray(int[] tab){
+      for(int i=0;i<(tab.length/2);i++){
+        System.out.print(tab[i]);
+      }
+    }
+ 
+    public static void reverseArray(int[] tab){
+      int temp;
+       for(int i=0;i<tab.length;i++){
+          temp = tab[i];
+          tab[i] = tab[(tab.length-1-i)];
+          tab[(tab.length-1-i)] = temp;
+       }
+    }
+}
+    
+    
+    
