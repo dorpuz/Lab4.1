@@ -1,0 +1,6 @@
+/* Napisz program przechowujący tablicę (obiektów) figur geometrycznych. Każdy obiekt powinien posiadać metodę obliczającą jego pole powierzchni. Wskazówki:
+
+    użyj typu interfejsu do zadeklarowania tablicy, będzie można tam przechowywać obiekty, które implementują ten interfejs,
+    iterując po wszystskich elementach tablicy wywołaj na przechowywnaych obiektach metodę wyliczającą pole powierzchni. */
+    
+    
