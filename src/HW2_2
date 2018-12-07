@@ -1,6 +1,36 @@
-/* Napisz program przechowujący tablicę (obiektów) figur geometrycznych. Każdy obiekt powinien posiadać metodę obliczającą jego pole powierzchni. Wskazówki:
+/* Napisz program przechowujący tablicę (obiektów) figur geometrycznych. Każdy obiekt powinien posiadać metodę obliczającą 
+jego pole powierzchni. Wskazówki:
 
     użyj typu interfejsu do zadeklarowania tablicy, będzie można tam przechowywać obiekty, które implementują ten interfejs,
     iterując po wszystskich elementach tablicy wywołaj na przechowywnaych obiektach metodę wyliczającą pole powierzchni. */
     
+    public class HW2_2{
+    
+        public static void main(String[] args){
+        
+            Figury[] figury = new Figury[10];
+            figury[0] = new Figury();
+            
+            for (int i=0;i<figury.length;i++){
+                class figury[i] implements FiguryInt
+            }
+        }
+    
+    }
+    
+    interface FiguryInt{
+        void countSurface(double a, double b);
+    }
+    class Figury{
+        double a,b;
+        String name;
+        
+        Figury(String name, double a, double b){
+            this.name = name;
+            this.a = a;
+            this.b = b;
+        }
+        
+        
+    }
     
