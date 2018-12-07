@@ -9,28 +9,22 @@ jego pole powierzchni. Wskazówki:
         public static void main(String[] args){
         
             Figury[] figury = new Figury[10];
-            figury[0] = new Figury();
+            Figury[0] trojkat = new Figury();
+            
             
             for (int i=0;i<figury.length;i++){
-                class figury[i] implements FiguryInt
+                class figury[i] implements Powierzchnia
             }
         }
     
     }
     
-    interface FiguryInt{
+    
+    interface Powierzchnia{
         void countSurface(double a, double b);
     }
-    class Figury{
-        double a,b;
-        String name;
-        
-        Figury(String name, double a, double b){
-            this.name = name;
-            this.a = a;
-            this.b = b;
-        }
-        
-        
+    
+    class Figury implements Powierzchnia{
+        double a,b;     
     }
     
