@@ -1,16 +1,18 @@
 /* Załóżmy, że na pierwsze pole szachownicy kładziemy 1 ziarno pszenicy, na drugie 2 ziarna, na trzecie 4 ziarna i na każde następne pole dwa razy więcej ziaren niż na pole poprzednie. Napisz program, który zasymuluje taką sytuację i zliczy sumę wszystkich ziaren na szachownicy. */
-
 public class HW2_3{
-  public static void main(String[] args){
-    long[][] chessboard = new long[8][8];
-    double sum = 0;
-    int a =0;
-    
-    for (int i=0;i<chessboard[0].length;i++){
-      for (int j=0;j<chessborad[1].length;j++){
-        tab[i][j] = (long) Math.pow(2,a++);
-      }
+    public static void main(String[] args){
+        long[][] chessboard = new long[8][8];
+        double sum = 0;
+        double a = 0;
+
+        for (int i=0;i<chessboard[0].length;i++){
+            for (int j=0;j<chessboard[1].length;j++){
+                chessboard[i][j] = (long)Math.pow(2,a++);
+                System.out.print(chessboard[i][j] + "\t ");
+                sum+= chessboard[i][j];
+            }
+            System.out.println();
+        }
+        System.out.println("\n suma: " + sum);
     }
-    System.out.println(sum);
-  }
 }  
